@@ -1,0 +1,241 @@
+/* + titulo */
+.container_titulo {
+  width: 100%;
+  margin: auto;
+  padding: 60px 0px 30px 0px;
+}
+.container_titulo h1,
+p {
+  color: white;
+  text-align: center;
+}
+/* - titulo */
+/* + tabla de datos */
+.container_comprar_mas {
+  margin: auto;
+  text-align: right;
+  max-width: 1200px;
+  width: 100%;
+}
+.btn_anadir_mas {
+  color: white;
+  padding: 5px 30px;
+  background: transparent;
+  border: 2px solid white;
+  text-align: right;
+}
+.btn_anadir_mas:hover {
+  background: white;
+  color: black;
+  border: 2px solid white;
+}
+/* + muestra lista de datos*/
+.table {
+  max-width: 1200px;
+  width: 100%;
+}
+.table * {
+  color: white;
+}
+.table thead {
+  background-color: rgba(38, 0, 255, 0.15);
+}
+.table tbody {
+  background-color: rgba(0, 110, 255, 0.1);
+}
+.container_btn_factura {
+  text-align: center;
+  margin: auto;
+}
+
+/* - muestra lista de datos*/
+
+#opc_subtract,
+#opc_add,
+#opc_delete {
+  padding: 5px 20px;
+}
+.elegir_productos {
+  width: 100%;
+  text-align: center;
+}
+.elegir_productos button {
+  margin: auto;
+}
+
+/* + pedir cuenta bancaria */
+.pedir_cuenta_bancaria {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  padding: 100px 0px 0px 0px;
+}
+.pedir_cuenta_bancaria p {
+  color: rgb(255, 58, 58);
+  background-color: white;
+  text-align: center;
+}
+.pedir_cuenta_bancaria h3 {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.form_pedir_cuenta_bancaria {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0px 20px 0px;
+}
+.form_pedir_cuenta_bancaria input[type="text"],
+label {
+  width: 100%;
+}
+.form_pedir_cuenta_bancaria input,
+label {
+  margin: 5px;
+  text-align: center;
+}
+.form_pedir_cuenta_bancaria label {
+  color: white;
+}
+.form_pedir_cuenta_bancaria input[type="text"],
+input[type="number"] {
+  width: 100%;
+}
+.opcines_tipo_cuenta {
+  width: 100%;
+  background-color: rgb(0, 153, 255);
+  color: white;
+}
+/* - pedir cuenta bancaria */
+
+/* - pedir inicio de sessión */
+.sms_debes_iniciar_session {
+  max-width: 400px;
+  margin: auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  height: 30px;
+}
+.sms_debes_iniciar_session p {
+  color: black;
+}
+.sms_debes_iniciar_session a {
+  color: red;
+}
+/* - pedir inicio de sessión */
+
+/* + body de poup */
+.overlay {
+  color: white;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: var(--colo-bg-overlay);
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  z-index: 3;
+}
+.popup {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  width: 550px;
+  text-align: right;
+}
+.visible {
+  visibility: visible;
+}
+.view_nav {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(111, 127, 255, 0.5);
+  width: 100%;
+}
+#close_hacer_factura {
+  box-sizing: border-box;
+  background: rgb(255, 0, 0);
+  border-radius: 50px;
+  padding: 5px;
+  height: 18px;
+  width: 18px;
+  margin: 8px 8px;
+  margin-right: 10px;
+}
+.content_hacer_factura {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgb(0, 115, 182);
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 40px 0px;
+}
+.content_hacer_factura * {
+  text-align: center;
+}
+/* + body de poup */
+
+/* + mssg al crear cuenta bacnaria */
+.container_mssg_cuenta_banco_campos {
+  background-color: white;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  display: none;
+}
+.container_mssg_cuenta_banco_campos p {
+  color: rgb(255, 58, 58);
+}
+.container_mssg_cuenta_banco_existe {
+  background-color: white;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  display: none;
+}
+.container_mssg_cuenta_banco_existe p {
+  color: rgb(255, 58, 58);
+}
+.container_mssg_cuenta_banco_creada {
+  background-color: rgb(74, 255, 58);
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  display: none;
+}
+.container_mssg_cuenta_banco_creada p {
+  color: black;
+}
+.container_ver_factura {
+  width: 100%;
+  text-align: center;
+}
+.content_factura_realizada p a {
+  text-decoration: underline;
+}
+/* - mssg al crear cuenta bacnaria */
+
+/* + opciones cuando hace compra */
+.container_compra {
+  width: 100%;
+  text-align: center;
+}
+.datos_generales h5 {
+  text-decoration: underline;
+}
+/* - opciones cuando hace compra */
+
+
+/* + mssg compra realizada */
+.content_factura_realizada {
+  text-align: center;
+  background: rgb(0, 106, 206);
+  padding: 20px 0 20px 0;
+}
+/* - mssg compra realizada */

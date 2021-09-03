@@ -1,0 +1,310 @@
+.container_logo * {
+  color: white;
+}
+.container_logo {
+  text-align: center;
+  padding: 100px 0px 50px 0px;
+}
+.contenedor {
+  width: 90%;
+  max-width: 2000px;
+  margin: auto;
+  padding-bottom: 300px;
+}
+
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+
+header {
+  padding: 40px 0;
+}
+header .logo {
+  text-align: center;
+  padding: 70px 0px 0px 35px;
+}
+header .logo p {
+  color: #9b9b9b;
+}
+header form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+header .barra-busqueda {
+  width: 70%;
+  height: 40px;
+  line-height: 40px;
+  background: rgb(225, 225, 225);
+  padding: 0 20px;
+  border-radius: 100px;
+  border: none;
+  text-align: center;
+  color: black;
+}
+header .barra-busqueda:hover {
+  background: #fff;
+}
+header .barra-busqueda:focus {
+  outline: none;
+}
+
+header .categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header .categorias a {
+  color: #bdbdbd;
+  text-decoration: none;
+  margin: 10px 20px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+header .categorias a.activo {
+  transform: scale(1.1);
+  color: rgb(250, 250, 250);
+}
+
+/* ------------------------- */
+/* Grid */
+/* ------------------------- */
+
+.grid {
+  margin: auto;
+  position: relative;
+  transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+  opacity: 1;
+}
+
+.grid .item {
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 10px;
+  z-index: 1;
+}
+
+.grid .item-contenido {
+  position: relative;
+  z-index: 0;
+  width: 200px;
+  overflow: hidden;
+}
+
+.item-contenido * {
+  transition: linear all 0.17s;
+  overflow: hidden;
+}
+
+.item-contenido .imagen_prod {
+  position: relative;
+  top: -14px;
+}
+.item-contenido:hover .imagen_prod {
+  transition: linear all 0.17s;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  position: relative;
+  top: -35px;
+}
+
+.grid .item img {
+  width: 200px;
+  cursor: pointer;
+  vertical-align: top;
+}
+.detalle_producto * {
+  color: black;
+}
+.detalle_producto {
+  background-color: white;
+  text-align: left;
+  width: 100%;
+  padding: 10px 0px 10px 20px;
+}
+.detalle_producto p {
+  padding: 0;
+  margin: 0;
+}
+/* ------------------------- */
+/* Overlay */
+/* ------------------------- */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.overlay.activo {
+  display: flex;
+}
+
+.overlay img {
+  max-width: 100%;
+}
+
+.overlay p {
+  max-width: 100%;
+  color: white;
+}
+
+.overlay .descripcion {
+  display: block;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 10px;
+  max-width: 50%;
+  width: 500px;
+  color: black;
+}
+
+.contenedor-img {
+  position: relative;
+}
+
+.overlay #btn-cerrar-popup {
+  background: none;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+.comprar {
+  color: white;
+}
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+@media screen and (max-width: 700px) {
+  .grid .item {
+    width: calc(50% - 15px);
+  }
+  header .barra-busqueda {
+    width: 100%;
+  }
+}
+
+/* mensaje de error no conectado con el servidor*/
+.error_server {
+  width: 100%;
+}
+.error_server h3 {
+  padding: 20px 20px;
+  box-shadow: 0px 0px 10px 1px rgb(228, 19, 19);
+  background-color: rgb(236, 32, 32);
+  color: white;
+  text-align: center;
+}
+
+/* + btn carrito */
+#button-up {
+  width: 75px;
+  height: 75px;
+  background: #fffcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  font-size: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  z-index: 3;
+}
+#button-up:hover {
+  transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.onda {
+  width: 75px;
+  height: 75px;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  transition: all 300ms ease;
+  z-index: 2;
+  animation: onda 2s infinite;
+}
+@keyframes onda {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+.cantidad_prod_carrito {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  top: -30px;
+  left: -20px;
+  width: 23px;
+  height: 23px;
+}
+.fas {
+  position: relative;
+  left: -15px;
+}
+/* - btn carrito */
+
+/* - pedir inicio de sessión */
+.sms_debes_iniciar_session {
+  width: 400px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  height: 30px;
+}
+.sms_debes_iniciar_session p {
+  color: black;
+}
+.sms_debes_iniciar_session a {
+  color: red;
+}
+/* - pedir inicio de sessión */
+
+/* + mssg de no datos o erroes de server */
+.container_no_datos {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  text-align: center;
+}
+.container_no_datos p {
+  color: rgb(224, 50, 50);
+}
+/* - mssg de no datos o erroes de server */

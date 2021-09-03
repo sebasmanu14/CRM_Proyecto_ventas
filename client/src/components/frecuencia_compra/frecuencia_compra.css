@@ -1,0 +1,67 @@
+/* + titulo */
+.container_titulo {
+  width: 100%;
+  margin: auto;
+  padding: 100px 0px 50px 0px;
+}
+.container_titulo h1 {
+  color: white;
+  text-align: center;
+}
+/* - titulo */
+
+/* + muestra lista de datos*/
+.table_list_prod {
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+}
+.heder_table {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 33.333%);
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+.heder_iteam {
+  background-color: rgb(0, 107, 200);
+  color: white;
+  padding: 0.7rem;
+  text-align: center;
+}
+.body_table {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 33.333%);
+}
+.body_iteam {
+  border: 1px solid rgb(130, 130, 130);
+  padding: 5px 5px;
+  color: white;
+  text-align: center;
+}
+/* - muestra lista de datos*/
+
+/* + cotenedor de venta y detalle de la venta*/
+.container_factura {
+  padding: 60px 0;
+  margin: 70px 0;
+}
+.titulo_tabla {
+  text-align: center;
+  color: white;
+  padding: 20px 0 0 0;
+}
+.heder_iteam_detalle {
+  background-color:rgba(154, 156, 255, 0.3);
+  color: white;
+  padding: 0.7rem;
+  text-align: center;
+}
+.body_iteam_detalle{ 
+  border: 1px solid rgb(130, 130, 130);
+  padding: 5px 5px;
+  color: white;
+  text-align: center;
+}
+/* - cotenedor de venta y detalle de la venta*/

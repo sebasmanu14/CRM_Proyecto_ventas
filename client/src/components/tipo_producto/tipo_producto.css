@@ -1,0 +1,199 @@
+.content_general {
+  padding: 0px 0px 100px 0px;
+}
+/* + titulo */
+.container_titulo {
+  width: 100%;
+  margin: auto;
+  padding: 100px 0px 50px 0px;
+}
+.container_titulo h1 {
+  color: white;
+  text-align: center;
+}
+/* - titulo */
+
+/* + tabla de datos */
+/* + btn de crear */
+.container_create {
+  max-width: 1200px;
+  width: 100%;
+  text-align: right;
+  margin: auto;
+}
+#opc_create {
+  position: relative;
+  top: 20px;
+  right: 2%;
+}
+/* - btn de crear */
+
+/* + muestra lista de datos*/
+.table_list_prod {
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(0, 107, 200);
+}
+.heder_table {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 33.333%);
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+.heder_iteam {
+  background-color: rgb(0, 107, 200);
+  color: white;
+  padding: 0.7rem;
+  text-align: center;
+}
+.body_table {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 33.333%);
+}
+.body_iteam {
+  background-color: rgba(154, 156, 255, 0.3);
+  padding: 5px 5px;
+  color: white;
+  text-align: center;
+}
+/* - muestra lista de datos*/
+
+/* + popup */
+/* + body de poup */
+.overlay {
+  color: white;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: var(--colo-bg-overlay);
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+/* - body de poup */
+
+/* + ventanita */
+.popup {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  width: 550px;
+  text-align: right;
+}
+/* muestra la ventanita */
+.visible {
+  visibility: visible;
+}
+/* nav donde se cierra la ventanita */
+.view_nav {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(111, 127, 255, 0.5);
+  width: 100%;
+}
+/* - ventanita */
+
+/* + btn de cerrar la ventanita */
+#close_create,
+#close_see,
+#close_edit,
+#close_delete {
+  background: rgb(255, 0, 0);
+  border-radius: 50px;
+  padding: 5px;
+  height: 18px;
+  width: 18px;
+  margin: 8px 8px;
+  margin-right: 10px;
+}
+/* - btn de cerrar la ventanita */
+
+/* + contenedor de datos de la ventanita */
+.content_creat,
+.content_see,
+.content_edit,
+.content_delete {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgb(0, 115, 182);
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 40px 0px;
+}
+.content_creat *,
+.content_see *,
+.content_edit *,
+.content_delete * {
+  text-align: center;
+}
+/* - contenedor de datos de la ventanita */
+
+/* + ventanita para crear registro */
+.form_create {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  margin: auto;
+  width: 300px;
+}
+
+.form_create input[type="number"],
+.form_create input[type="datetime"],
+.form_create input[type="text"] {
+  width: 100%;
+}
+.form_create input[type="number"]:focus,
+.form_create input[type="datetime"]:focus,
+.form_create input[type="text"]:focus {
+  outline: none;
+}
+.form_create input[type="submit"] {
+  margin: auto;
+  width: auto;
+}
+
+/* - ventanita para crear registro */
+
+/* campos see */
+.content_see label {
+  background-color: transparent;
+  cursor: unset;
+  outline: none;
+  width: 100%;
+}
+.content_see input {
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  cursor: unset;
+  outline: none;
+  width: 100%;
+}
+/* campos see */
+
+/* campos edit */
+.input_edit {
+  text-align: center;
+}
+/* campos edit */
+
+/* campos delete */
+.name_delete {
+  background: transparent;
+  color: white;
+  text-align: center;
+}
+.name_delete:focus {
+  outline: none;
+}
+/* campos delete */
+
+/* - popup */

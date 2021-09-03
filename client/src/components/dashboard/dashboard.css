@@ -1,0 +1,50 @@
+/* + sms bienvenido */
+.container_welcome * {
+  color: white;
+}
+.container_welcome {
+  max-width: 900px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.container_welcome h4,
+p {
+  text-align: left;
+}
+.container_welcome h3 {
+  padding: 50px;
+}
+/* - sms bienvenido */
+
+/* + carousel*/
+.carousel,
+.carousel-inner {
+  max-height: 55vh;
+}
+/* - carousel*/
+
+/* + container_informacion*/
+.container_informacion {
+  padding: 100px 0px 0px 0px;
+  max-width: 1200px;
+  margin: auto;
+}
+.container_informacion h4 {
+  text-align: center;
+  background-color: teal;
+  max-width: 100%;
+  color: white;
+  padding: 20px 0px 20px 0px;
+}
+.container_mision_vision {
+  max-width: 100%;
+  background-color: white;
+  padding: 20px 0px 20px 0px;
+}
+.mision,
+.vision {
+  max-width: 1100px;
+  margin: auto;
+}
+/* - container_informacion*/

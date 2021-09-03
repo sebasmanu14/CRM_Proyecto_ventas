@@ -1,0 +1,182 @@
+.content_general {
+  min-width: 100%;
+  margin-top: 150px;
+  padding-bottom: 500px;
+}
+.caja__trasera {
+  width: 100%;
+}
+.caja__trasera-register {
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 19, 22, 0.5);
+  color: white;
+  border-radius: 3%;
+  transition: all 500ms;
+  padding: 90px 0px 0px 80px;
+  margin: auto;
+  text-align: left;
+  height: 350px;
+  width: 900px;
+}
+.caja__trasera div p,
+.caja__trasera div button {
+  margin-top: 30px;
+}
+.caja__trasera button {
+  padding: 10px 40px;
+  border: 2px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  transition: all 300ms;
+}
+.caja__trasera button:hover {
+  background: #fff;
+  color: #13161a;
+}
+.contenedor__register {
+  max-width: 500px;
+  position: relative;
+  top: -400px;
+  left: 750px;
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: moveForm 0.2s linear;
+}
+@keyframes moveForm {
+  from {
+    left: 200px;
+    opacity: 0.7;
+  }
+  to {
+    left: 750px;
+  }
+}
+.contenedor__register {
+  width: 100%;
+}
+.contenedor__register form {
+  max-width: 500px;
+  padding: 0px 20px 80px 20px;
+  background: #fff;
+  position: absolute;
+  border-radius: 20px;
+}
+.contenedor__register form h3 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+  top: 60px;
+}
+.contenedor__register form input[type="number"],
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #f2f2f2;
+  outline: none;
+}
+.contenedor__register form button {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  background: #0b0b0c;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+.formulario__register {
+  opacity: 1;
+  display: block;
+}
+.quiero_log {
+  margin: 50px 0 0 0;
+  float: right;
+  display: none;
+}
+@media (max-width: 1300px) {
+  .content_general {
+    padding: 100px 0 200px 0;
+    margin: 0;
+  }
+  .caja__trasera {
+    display: none;
+  }
+  .contenedor__register {
+    max-width: 100%;
+    position: initial;
+    padding: 0px;
+  }
+  .contenedor__register form {
+    position: initial;
+    max-width: 500px;
+    margin: auto;
+    top: 200px;
+    text-align: center;
+  }
+  .quiero_log {
+    float: none;
+    display: block;
+  }
+}
+.input_checkbox {
+  margin: 20px 15px 0px 15px;
+}
+.content_cuenta_banco {
+  display: none;
+  background-color: blue;
+  width: 300px;
+}
+.mostrar {
+  display: block;
+}
+.opcines_tipo_cuenta {
+  width: 100%;
+  background-color: rgb(0, 153, 255);
+  color: white;
+}
+.opcines_tipo_cuenta:focus {
+  width: 100%;
+  color: black;
+}
+.opc_tipo_cuenta {
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  width: 200px;
+}
+/*================================*/
+/* mensajes de alerta en registro */
+/*================================*/
+#sms_llene_campos,
+#sms_inicie_session,
+#sms_cuenta_banco {
+  background: rgb(255, 69, 69);
+  color: white;
+  animation: entrada 0.4s linear;
+  position: relative;
+  top: 70px;
+  padding: 10px;
+  z-index: 3;
+  width: 100%;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.sms_llene_campos,
+.sms_inicie_session,
+.sms_cuenta_banco {
+  display: none;
+}
+@keyframes entrada {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 0px;
+  }
+}
+/*================================*/
+/* mensajes de alerta en registro */
+/*================================*/
